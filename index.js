@@ -8,7 +8,7 @@ const fs = require("fs");
 const router = express.Router();
 
 // Define the port where the server will listen
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
