@@ -1,0 +1,249 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic page layout styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 24px;
+}
+
+.header-content p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.zero-rating {
+  background-color: yellow !important; /* Change the highlight style as desired */
+  font-weight: bold;
+  color: darkgray;
+}
+
+main.content {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* Basic styles for the navigation bar */
+.nav {
+  padding: 2.4rem;
+}
+
+/* Style for the navigation list */
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Style for each navigation item */
+.nav-list-item {
+  display: inline-block;
+}
+
+.active {
+  border-bottom: 2px solid #ff9900;
+}
+/* Style for the navigation links */
+.nav-list-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #333; /* Link text color */
+  transition: color 0.3s; /* Smooth color transition on hover */
+  padding-bottom: 0.5rem;
+}
+
+/* Hover effect for the navigation links */
+.nav-list-link:hover {
+  color: #ff9900; /* Change color on hover */
+  text-decoration-style: wavy;
+}
+.heading-form {
+  color: #317874;
+}
+.form-container {
+  /* backgroundcolor: #ddd; */
+  max-width: 25rem;
+  max-height: 35rem;
+  margin-top: 1.2rem;
+  padding: 1.8rem 2rem;
+  gap: 1.8rem;
+  display: flex;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.2rem;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-bottom: 10.5rem;
+}
+.btn-submit {
+  border: none;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.2rem;
+  background-color: #317874;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s color;
+}
+.btn-submit:hover {
+  background-color: #054744;
+}
+
+input {
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.2em solid #007bff;
+  background: rgba(#007bff, 0.2);
+  border-radius: 0.2em 0.2em 0 0;
+  padding: 0.4em;
+  font-family: inherit;
+  padding: 0.75rem;
+  color: #007bff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+table {
+  /* width: 75%; */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-size: 0.9rem;
+}
+
+.invoice-id {
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+.btn {
+  /* Style the button */
+
+  background-color: #007bff; /* Change to your desired button color */
+  color: #fff; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth hover effect */
+} /* Change button color on hover */
+.btn:hover {
+  background-color: #0056b3; /* Change to your desired hover color */
+}
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-image {
+  width: 10rem;
+  height: auto;
+  max-width: 100%;
+}
+
+.product-details {
+  padding: 16px;
+}
+
+.product-details h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #555;
+}
+
+.product-rating {
+  background-color: #f9ca24;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  padding: 6px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>All Sales Data</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Invoice ID</th>
+          <th>Branch</th>
+          <th>City</th>
+          <th>Customer Type</th>
+          <th>Product Line</th>
+          <th>Name</th>
+          <th>Image</th>
+         
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each sales}}
+         
+          <tr {{#if (isEqual (zeroIfZero this.Rating) "zero")}} class="zero-rating" {{/if}}>
+           
+            {{!-- prettier-ignore --}}
+            <td class="invoice-id">{{this.[Invoice ID]}}</td>
+            <td>{{this.Branch}}</td>
+            <td>{{this.City}}</td>
+            {{!-- prettier-ignore --}}
+            <td>{{this.[Customer type]}}</td>
+            {{!-- prettier-ignore --}}
+            <td>{{this.[Product line]}}</td>
+            <td>{{this.name}}</td>
+            <td><img
+                src="{{this.image}}"
+                alt="Product Image not found"
+                width="100"
+                height="100"
+              /></td>
+         
+           <td>{{zeroIfZero this.Rating }}</td>
+          </tr>
+       
+        {{/each}}
+      </tbody>
+    </table>
+
+   
+  </body>
+</html>

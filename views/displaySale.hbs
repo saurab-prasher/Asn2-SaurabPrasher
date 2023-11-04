@@ -1,0 +1,43 @@
+<div>
+  <h1>Sales Information</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Invoice ID</th>
+        <th>Branch</th>
+        <th>City</th>
+        <th>Customer Type</th>
+        <th>Product Line</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+
+     
+     <tr {{#if (isEqual (zeroIfZero sale.Rating) "zero")}} class="zero-rating" {{/if}}></tr>
+
+        {{!-- prettier-ignore --}}
+        <td>{{sale.[Invoice ID]}}</td>
+        <td>{{sale.Branch}}</td>
+        <td>{{sale.City}}</td>
+        {{!-- prettier-ignore --}}
+        <td>{{sale.[Customer type]}}</td>
+        {{!-- prettier-ignore --}}
+        <td>{{sale.[Product line]}}</td>
+        <td>{{sale.name}}</td>
+        <td><img
+            src="{{sale.image}}"
+            alt="Product Image not found"
+          
+          /></td>
+        
+        <td>{{zeroIfZero sale.Rating }}</td>
+      </tr>
+      
+
+    </tbody>
+  </table>
+
+</div>
