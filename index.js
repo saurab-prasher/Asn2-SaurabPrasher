@@ -5,7 +5,6 @@ const app = express();
 const hbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const fs = require("fs");
-const router = express.Router();
 
 // Define the port where the server will listen
 const port = 3000;
